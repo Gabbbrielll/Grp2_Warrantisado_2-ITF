@@ -192,3 +192,44 @@ form .signup-link a:hover{
   transition: all 0.2s ease;
   background: rgb(39, 68, 114);
 }
+
+.image{
+            margin-left: 0px;
+            margin-right: 1850px;
+            margin-top: 0px;
+            position: relative;
+            bottom: 120px;
+        }
+
+ .a{
+            position: relative;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 1200px;
+            bottom: 150px;
+        }
+
+        .b{
+            position: relative;
+            margin-top: 0px;
+            margin-left: 1200px;
+            margin-right: 0px;
+            bottom: 204px;
+        }
+
+        .c{
+            position: relative;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            bottom: 254px;
+        }
+
+        .d{
+            position: relative;
+            margin-top: 0px;
+            margin-left: 1700px;
+            margin-right: 0px;
+            bottom: 430px;
+            font-size: 15px;
+        }
