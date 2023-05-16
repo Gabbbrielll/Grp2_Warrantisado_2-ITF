@@ -195,18 +195,19 @@ form .signup-link a:hover{
 
 .image{
             margin-left: 0px;
-            margin-right: 1850px;
+            margin-right: 1750px;
             margin-top: 0px;
             position: relative;
-            bottom: 120px;
+            bottom: 28px;
         }
 
- .a{
+        .a{
             position: relative;
             margin-top: 0px;
             margin-left: 0px;
             margin-right: 1200px;
-            bottom: 150px;
+            bottom: 125px;
+            font-size: 25px;
         }
 
         .b{
@@ -214,7 +215,8 @@ form .signup-link a:hover{
             margin-top: 0px;
             margin-left: 1200px;
             margin-right: 0px;
-            bottom: 204px;
+            bottom: 169px;
+            font-size: 25px;
         }
 
         .c{
@@ -222,14 +224,25 @@ form .signup-link a:hover{
             margin-top: 0px;
             margin-left: 0px;
             margin-right: 0px;
-            bottom: 254px;
+            bottom: 204px;
+            font-size: 25px;
         }
 
         .d{
             position: relative;
             margin-top: 0px;
-            margin-left: 1700px;
+            margin-left: 1800px;
             margin-right: 0px;
-            bottom: 430px;
+            bottom: 330px;
             font-size: 15px;
+        }
+
+        .e{
+            text-align: center;
+            font-size: 22px;
+            position: relative;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            bottom: 165px;
         }
