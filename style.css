@@ -226,7 +226,9 @@ form .signup-link a:hover{
             margin-right: 100px;
            padding-left: 0px;
            padding-right: 0px;
-       
+          text-decoration:none;
+            
+          
         }
 
         .b{
