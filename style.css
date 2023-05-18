@@ -204,6 +204,15 @@ form .signup-link a:hover{
             bottom: 0px;
         }
 
+        .f{
+            
+          display: inline-block;
+          margin-right: 100px;
+         padding-left: 0px;
+         padding-right: 0px;
+     
+      }
+
         .a{
             
             display: inline-block;
@@ -213,17 +222,24 @@ form .signup-link a:hover{
             border-color:#5885AF;
             border-radius: 20px;
             border-width: 8px;
+            background-color:#5885AF;
+            margin-right: 100px;
+           padding-left: 0px;
+           padding-right: 0px;
+       
         }
 
         .b{
           
-          display: inline-block;
+          display:inline-block;
           font-size: 25px;
           color: #274472;
           border-style: inset;
           border-color:#5885AF;
           border-radius: 20px;
           border-width: 8px;
+          background-color:#5885AF;
+          margin-left: 150px;
         }
 
         .c{
@@ -235,6 +251,11 @@ form .signup-link a:hover{
             border-color:#5885AF;
             border-radius: 20px;
             border-width: 8px;
+            background-color:#5885AF;
+            margin-left: 200px;
+            bottom: 300px;
+            
+            
         }
 
         .d{
@@ -245,18 +266,16 @@ form .signup-link a:hover{
             bottom: 100px;
             font-size: 15px;
             color:#274472;
+            
         }
 
         .e{
             text-align: center;
             font-size: 22px;
             position: relative;
-            
             color: #274472;
             border-bottom: 60px #274472;
         }
-
-      
 
         .gab{
           font-size: 22px;
