@@ -1,7 +1,17 @@
-<?php session_start();?>
+<?php 
+require_once "crudconfig.php";
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+    header('Location: indexLogin.html');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,8 +45,12 @@
                         
                     
                         <form action="code.php" method="POST">
+                        <div class="form-group mb-3">
+                                <label for="">Email</label>
+                                <input type="text" name="email" class="form-control" />
+                            </div>
                             <div class="form-group mb-3">
-                                <label for="">Name</label>
+                                <label for="">Name of Product</label>
                                 <input type="text" name="name" class="form-control" />
                             </div>
                             <div class="form-group mb-3">
@@ -56,7 +70,7 @@
                 </div>
                 <?php
  $con = mysqli_connect("localhost","root","","receipts");
- $query = "SELECT * FROM demo WHERE id= 5";
+ $query = "SELECT * FROM demo WHERE E_mail = '$_SESSION[name];";
     $query_run = mysqli_query($con, $query);
     $output = mysqli_fetch_assoc($query_run);
     $current_date = strtotime(date('Y-m-d'));
@@ -66,10 +80,44 @@ if ($output['dob'] > $current_date) {
 } else {
     echo "Warning: this warranty is expired!";
 }
-
-    ?>
-<h1> <?php echo $output['name'] ?> </h1>    
-<h1> <?php echo $output['dob'] ?> </h1>
+$sql = "SELECT * FROM demo WHERE email= '$_SESSION[name]'";
+						if ($result = $mysqli->query($sql)) {
+							if ($result->num_rows > 0) {
+						?>
+								<table class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>Transcript of Records</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<?php
+										if ($_SESSION['name']) {
+											$row = $result->fetch_array(MYSQLI_ASSOC);
+										?>
+											<tr>
+												
+													<td>
+														<?php echo $row['dob']; ?>
+														
+													</td>
+													<td>
+														<?php echo $row['warranty_num']; ?>
+														
+													</td>
+													
+												
+												
+											</tr>
+								<?php
+											echo "</tbody>";
+											echo "</table>";
+										}
+                                    }
+                                }
+               ?>             
+                
             </div>
         </div>
     </div>
